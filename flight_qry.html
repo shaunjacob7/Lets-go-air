@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Booking</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='./myjs.js'></script>
+  </head>
+
+  <style>
+    
+
+    .form1_tb{
+      border:1px solid green;
+    }
+
+    .cls_errmsg{
+      color:red;
+    }    
+    </style>
+    
+
+<script src='./myjs.js'></script>
+
+
+<!-- background-->
+<style>
+  body {
+    background-image: url('imgg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
+   
+     <!-- header-->
+        <table  cellpadding=20 align=center>
+            
+            <tr>
+            
+            <td><img height=70px width=70px src="C:\Users\SHAUN PC\Desktop\New folder\Let's Go Logo.jpg"></td>
+            
+            <td><font size=7>LETS GO AIRLINE</font></td>
+            
+           
+            
+            </tr>
+            
+            </table>
+            
+            <!-- search table-->
+            <table border=2 align=center>
+            
+            <tr><td>
+            
+            <table cellspacing=10>
+            
+            <tr><td colspan=3><h1>AVAILABLE FLIGHT</h1></td></tr>
+            
+            <tr><td>FLIGHT NUMBER</td><td colspan=2><input id='tb_orgn_cty' class='form1_tb' type="text">
+            
+            <tr><td>DEPARTURE TIME</td><td colspan=2><input id='tb_dest_cty' class='form1_tb' type="text">
+            
+              <tr><td>ARRIVAL TIME</td><td colspan=2><input id='tb_orgn_cty' class='form1_tb' type="text">
+            
+                <tr><td>TICKET PRICE</td><td colspan=2><input id='tb_dest_cty' class='form1_tb' type="text">
+              <tr><td><h6 id="h6_errmsg" class="cls_errmsg"></h6></td>
+            
+            
+           
+            
+          
+            
+            
+            
+            <tr><td colspan=3 align=center><input type="button" value="BOOK FLIGHT" onclick="validateCity()"></td></tr>
+            
+            </table>
+        </form>
+    
+    </body>
+    
+    
+    
+  
+
+</html>
