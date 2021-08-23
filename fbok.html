@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Booking</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"></script>
+  <script src=" https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='./myjs.js'></script>
+<script>
+   
+  </script>
+  </head>
+
+  <style>
+    
+
+    .form1_tb{
+      border:1px solid green;
+    }
+
+    .cls_errmsg{
+      color:red;
+    }    
+    </style>
+    
+
+<script src='./fbok.js'></script>
+
+
+<!-- background-->
+<style>
+  body {
+    background-image: url('imgg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
+   <link rel="icon" type="image/png" href="C:\Users\SHAUN PC\Desktop\VSC\favicon-16x16.png" sizes="16x16">
+     <!-- header-->
+    <div class="main_tb">
+        <table  cellpadding=20 align=center>
+            
+            <tr>
+            
+            <td><img height=70px width=70px src="./lets_go_logo.jpg"></td>
+            
+            <td><font size=7>LETS GO AIRLINE</font></td>
+            
+           
+            
+            </tr>
+            
+            </table>
+            <!-- overview vision values-->
+            <table border=2 cellpadding=10 cellspacing=10  align=center>
+            
+            <tr>
+            
+            <td><font size=5><a href="overview.html" target="f3">Over view</a></font></td>
+            
+            <td><font size=5><a href="vison.html" target="f3">Vision</a></font></td>
+            <td><font size=5><a href="value.html" target="f3">values</a></font></td>
+            </tr>
+            
+            </table>
+            <!-- search table-->
+            <table border=2 align=center>
+            
+            <tr><td>
+            
+            <table cellspacing=10>
+            
+            <tr><td colspan=3><h1>Booking Information</h1></td></tr>
+            
+            <tr><td>ORIGIN:Origin city</td><td colspan=2><input id='tb_orgn_cty' class='form1_tb' type="text">
+            
+            <tr><td>DESTINATION:Destination city</td><td colspan=2><input id='tb_dest_cty' class='form1_tb' type="text">
+            
+            <tr><td>DATE:Date of journey</td><td colspan=2><input id='tb_destdate' type="date">
+              <tr><td><h6 id="h6_errmsg" class="cls_errmsg"></h6></td>
+            
+            
+            <tr><td>No of passangers</td>
+            
+            <td rowspan=2>
+            
+          
+            
+            </td>
+            
+            </tr>
+            
+            <tr><td>
+            
+            <select id='sel_psngr'>
+            
+            <option value="1">1</option>
+            
+            <option value="2">2</option>
+            
+            
+            
+            </select>
+            
+            </td>
+            
+           
+            
+            </tr>
+            
+            <tr><td colspan=3 align=center><input type="button" value="SEARCH FLIGHTS" onclick="validateCity()"></td></tr>
+            
+            </table>
+          </div>
+
+
+       
+          <table id="dataTable" class="table table-bordered table-striped hidden">  
+              <thead>  
+                  <tr>  
+                      <th>flight_id</th>  
+                      <th>depart_date</th>  
+                      <th>depart_time</th>
+                      <th>arrival_time</th>>
+                      <th>source_airport</th>  
+                      <th>destination_airport</th>  
+                      <th>ticket_price</th>
+                  </tr>  
+              </thead>  
+          </table>  
+   
+    
+    </body>
+    
+    
+    
+  
+
+</html>
+
